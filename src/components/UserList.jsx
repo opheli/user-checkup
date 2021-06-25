@@ -13,6 +13,7 @@ function UserList() {
       const userRes = await res.json()
       setInfoUser(userRes)
     } catch (err) {
+      
       console.error(err)
     }
   }, [setInfoUser])
@@ -21,7 +22,7 @@ function UserList() {
   return (
     <div className="text-center">
       <NavBar />
-      <h1>UserList</h1>
+      <h1 className="m-5">UserList</h1>
       <Table striped bordered hover variant="light">
         <thead>
           <tr>
